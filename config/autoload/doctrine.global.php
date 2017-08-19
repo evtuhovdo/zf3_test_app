@@ -12,7 +12,7 @@ return [
                     'port' => 3306,
                     'user' => 'evtuhovdo',
                     'password' => 'root4455112233',
-                    'dbname' => 'zf2_test_app',
+                    'dbname' => 'zf3_test_app',
                 ]
             ]
         ],
@@ -57,7 +57,7 @@ return [
         'migrations_configuration' => [
             'orm_default' => [
                 'directory' => './migrations/Doctrine',
-                'name' => 'Zf2 Test App Migrations',
+                'name' => 'Zf3 Test App Migrations',
                 'namespace' => 'DoctrineMigrations',
                 'table' => 'doctrine_migration_versions',
                 'column' => 'version',
