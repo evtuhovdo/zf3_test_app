@@ -12,7 +12,7 @@ return [
                     'port' => 3306,
                     'user' => 'evtuhovdo',
                     'password' => 'root4455112233',
-                    'dbname' => 'zf3_test_app',
+                    'dbname' => 'zf2_test_app',
                 ]
             ]
         ],
