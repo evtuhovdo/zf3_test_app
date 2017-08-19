@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="user")
  * @ORM\Entity
  */
-class Firm
+class User
 {
     /**
      * @var integer
@@ -53,7 +53,7 @@ class Firm
      *
      * @param string $name
      *
-     * @return Firm
+     * @return User
      */
     public function setName($name)
     {
