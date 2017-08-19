@@ -9,7 +9,7 @@ namespace Application;
 
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Application\Model;
 
 return [
     'router' => [
@@ -41,6 +41,11 @@ return [
             Controller\IndexController::class => InvokableFactory::class,
         ],
     ],
+    'service_manager' => [
+        'factories' => [
+            Model\UserModel::class => Model\UserModelFactory::class,
+        ],
+    ],
     'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
@@ -58,18 +63,18 @@ return [
         ],
     ],
     'doctrine' => [
-        'driver' => array(
-            'core_driver' => array(
+        'driver' => [
+            'core_driver' => [
                 'class' => 'Doctrine\\ORM\\Mapping\\Driver\\AnnotationDriver',
-                'paths' => array(
+                'paths' => [
                     __DIR__ . '/../src/Entity',
-                ),
-            ),
-            'orm_default' => array(
-                'drivers' => array(
+                ],
+            ],
+            'orm_default' => [
+                'drivers' => [
                     'Application\\Entity' => 'core_driver',
-                )
-            )
-        ),
+                ]
+            ]
+        ],
     ]
 ];
