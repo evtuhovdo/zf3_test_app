@@ -12,3 +12,8 @@ docker-compose up
 docker exec -it zf3testapp_zf_1 php composer.phar install 
 ```
 или зайти в контейнер и вополнить там комманду ```php composer.phar install```.
+
+Если вы указали другую БД для подключения, то выполните миграцию.
+```
+docker exec -it zf3testapp_zf_1 php vendor/bin/doctrine-module migrations:migrate
+```
