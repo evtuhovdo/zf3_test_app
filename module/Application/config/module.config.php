@@ -38,7 +38,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
+            Controller\IndexController::class => Controller\IndexControllerFactory::class,
         ],
     ],
     'service_manager' => [
