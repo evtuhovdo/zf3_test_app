@@ -17,3 +17,5 @@ docker exec -it zf3testapp_zf_1 php composer.phar install
 ```
 docker exec -it zf3testapp_zf_1 php vendor/bin/doctrine-module migrations:migrate
 ```
+
+Приложение будет доступно по ссылке http:\\localhost:8080
